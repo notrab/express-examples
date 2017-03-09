@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  p Hi #{name}!
+
+  h2 Our users
+
+  ul
+    each user in users
+      li= user.name
